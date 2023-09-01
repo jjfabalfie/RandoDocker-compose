@@ -11,7 +11,7 @@ services:
             - WATCHTOWER_MONITOR_ONLY=false
             - WATCHTOWER_CLEANUP=true
             - WATCHTOWER_SCHEDULE= 0 0 1 * * * #At 01:00 AM, only on Sunday.
-            -WATCHTOWER_HTTP_API_TOKEN=eEFGhbrgwiugbogiuwgh
+            -WATCHTOWER_HTTP_API_TOKEN=
             -WATCHTOWER_HTTP_API_METRICS=true
         restart: unless-stopped
         container_name:wchtw
