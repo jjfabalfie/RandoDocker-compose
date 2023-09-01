@@ -7,8 +7,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=GMT
-      - PASSWORD=naP-noRth-aT-1249
-      - SUDO_PASSWORD=raIlroad-bE-systeMatic-1074
+      - PASSWORD=
+      - SUDO_PASSWORD=
     volumes:
       - ~/docker/vscode/data/config:/config
     ports:
