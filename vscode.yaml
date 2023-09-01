@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: vscode
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=GMT
+      - PASSWORD=naP-noRth-aT-1249
+      - SUDO_PASSWORD=raIlroad-bE-systeMatic-1074
+    volumes:
+      - ~/docker/vscode/data/config:/config
+    ports:
+      - 9102:8443
+    restart: unless-stopped

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  obsidian:
+    image: 'ghcr.io/sytone/obsidian-remote:latest'
+    restart: unless-stopped
+    ports:
+      - 9103:8080
+    volumes:
+      - ~/docker/obsid/vaults:/vaults
+      - ~/docker/obsid/config:/config
+    

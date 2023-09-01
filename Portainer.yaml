@@ -1,0 +1,22 @@
+version: '3'
+services:
+    db:
+        image: mariadb:10.6
+        container_name: maria
+        restart: unless-stopped
+        volumes:
+            - ~/docker/maria/data:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=bAre-homOsexual-swIng
+            - MYSQL_USER=mars
+            - MYSQL_PASSWORD=meAning-Black-agRee
+            - MYSQL_DATABASE=mariadb
+        ports:
+            - "3306:3306"
+        networks:
+            - database
+            
+networks:
+    database:
+        driver: bridge
+        external: true
