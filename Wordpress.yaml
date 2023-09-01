@@ -8,9 +8,9 @@ services:
             - 9107:80
         restart: unless-stopped
         environment:
-            WORDPRESS_DB_HOST: '10.0.10.244:3306'
-            WORDPRESS_DB_USER: 'wordpress'
-            WORDPRESS_DB_PASSWORD: 'Ohgosh-0hMyyy-0H311y'
+            WORDPRESS_DB_HOST: 
+            WORDPRESS_DB_USER: 
+            WORDPRESS_DB_PASSWORD: 
             WORDPRESS_DB_NAME: 'wordpress'
             
-##############Configured Database through PHPmyadmin##############
+##############Configured Database through PHPmyadmin with MariaDB 10.6##############
