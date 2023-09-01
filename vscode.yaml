@@ -10,7 +10,7 @@ services:
       - PASSWORD=
       - SUDO_PASSWORD=
     volumes:
-      - ~/docker/vscode/data/config:/config
+      - ~/docker/txted/vscode/data/config:/config
     ports:
       - 9102:8443
     restart: unless-stopped
