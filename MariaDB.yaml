@@ -7,9 +7,9 @@ services:
         volumes:
             - ~/docker/maria/data:/var/lib/mysql
         environment:
-            - MYSQL_ROOT_PASSWORD=bAre-homOsexual-swIng
-            - MYSQL_USER=mars
-            - MYSQL_PASSWORD=meAning-Black-agRee
+            - MYSQL_ROOT_PASSWORD=
+            - MYSQL_USER=
+            - MYSQL_PASSWORD=
             - MYSQL_DATABASE=mariadb
         ports:
             - "3306:3306"
