@@ -1,5 +1,5 @@
-run  "docker exec -i maria mariadb -u root --password=bAre-homOsexual-swIng guacamole > initdb.sh"
-###  Make a databse on phpmyadmin called guacamole. Then create a user called guacamole on that database with allperissions. Then on database permissions grant all except grant.###
+run  "docker exec -i <container_name of database> <database> -u root --password= > initdb.sh"
+###  Make a databse on phpmyadmin called guacamole. Then create a user called guacamole on that database with all perissions. Then on database permissions grant all except grant.###
 version: '3'
 services:
    guacd:
@@ -24,11 +24,11 @@ services:
          GUACD_HOSTNAME: "guacd"
          GUACD_PORT: "4822"
          GUACAMOLE_HOME: "/etc/guacamole"
-         MYSQL_HOSTNAME: "10.0.10.244"
+         MYSQL_HOSTNAME: ""
          MYSQL_PORT: "3306"
          MYSQL_DATABASE: "guacamole"
          MYSQL_USER: "guacamole"
-         MYSQL_PASSWORD: "bathroOm-disTance-soFa-9104"
+         MYSQL_PASSWORD: ""
       depends_on:
          - guacd
       volumes:
