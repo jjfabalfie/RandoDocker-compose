@@ -1,6 +1,7 @@
 version: '3'
 services:
     client:
+        contaner_name: nginx1
         image: nginx:latest
         ports:
             - 9105:80
