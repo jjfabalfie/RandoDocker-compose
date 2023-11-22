@@ -1,5 +1,5 @@
 #Memos is your own private social network like Facebook
-
+#An IOS third party app can link to eat is Moe Memos
 version: "3.0"
 services:
   memos:
