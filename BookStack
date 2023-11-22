@@ -1,0 +1,19 @@
+version: "2"
+services:
+  bookstack:
+    image: lscr.io/linuxserver/bookstack
+    container_name: bookstack
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - APP_URL=
+      - DB_HOST=<IP address of db machine>
+      - DB_PORT=3306
+      - DB_USER=bookstackuser
+      - DB_PASS=<DB user password> ljGIJSAEOGJ
+      - DB_DATABASE=bookstackapp
+    volumes:
+      - ~/docker/bkstc/config:/config
+    ports:
+      - 9107:80
+    restart: unless-stopped
